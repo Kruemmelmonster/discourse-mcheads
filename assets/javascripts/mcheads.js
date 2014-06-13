@@ -1,5 +1,5 @@
 function details(text) {
-  if (text.contains("[head:")) {
+  if (text.indexOf("[head:") > -1); {
     var adjusted = "[img]http://cravatar.eu/helmavatar/"
     + text.replace(/\[head:([a-zA-Z0-9]+)]/, "$1")
     + "/16.png[/img]";

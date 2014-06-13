@@ -1,10 +1,9 @@
 function mcheads(text) {
-  //Expression to use
+  //Expression to find.
   var re = /\[head:([a-zA-Z0-9]+)]/;
-  
-  // Adjusted text
+  // Adjust text.
   var adjusted = text.replace(re, "[img]http://cravatar.eu/helmavatar/" + "$1" + "/16.png[/img]");
- return adjusted;
+  return adjusted;
 }
 
 Discourse.Dialect.postProcessText(function (text) {

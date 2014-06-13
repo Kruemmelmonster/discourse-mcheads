@@ -3,11 +3,7 @@ function mcheads(text) {
   var re = /\[head:([a-zA-Z0-9]+)]/;
   
   // Adjusted text
-  var adjusted = 
-  "[img]http://cravatar.eu/helmavatar/"
-  + srctext.replace(re, "$1")
-  + "/16.png[/img]";
-
+  var adjusted = text.replace(re, "[img]http://cravatar.eu/helmavatar/" + "$1" + "/16.png[/img]");
  return adjusted;
 }
 

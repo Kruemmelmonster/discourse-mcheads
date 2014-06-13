@@ -1,7 +1,7 @@
 function details(text) {
   if (text.contains("[head:")) {
     var adjusted = "[img]http://cravatar.eu/helmavatar/"
-    + text.replace(\[head:([a-zA-Z0-9]+)], "$1")
+    + text.replace(/\[head:([a-zA-Z0-9]+)], "$1"/)
     + "/16.png[/img]";
   }
  return adjusted;

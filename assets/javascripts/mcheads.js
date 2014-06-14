@@ -2,7 +2,7 @@ function mcheads(text) {
   //Expression to find.
   var re = /\[head:([a-zA-Z0-9]+)]/;
   // Adjust text.
-  var adjusted = text.replace(re, "[img]http://cravatar.eu/helmavatar/" + "$1" + "/16.png[/img]");
+  var adjusted = text.replace(re, "<img src=\"http://cravatar.eu/helmavatar/" + "$1" + "/16.png\">");
   return adjusted;
 }
 

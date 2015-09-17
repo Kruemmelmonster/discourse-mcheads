@@ -6,7 +6,6 @@
       var username = contents[1];
       console.log(username);
       return '<img src="http://cravatar.eu/avatar/' + username + '/16.png" />';
-      //return ["img", {"src": "http://cravatar.eu/avatar/" + username + "/16.png"}];
     }
   });
 })();
